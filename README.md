@@ -47,7 +47,7 @@
 ### Frontend
 | Технологія | Призначення |
 |---|---|
-| **React 18** | UI-фреймворк |
+| **React 19** | UI-фреймворк |
 | **TypeScript** | Типізація |
 | **Vite** | Збірка та dev-сервер |
 | **Tailwind CSS 3** | Утилітарний CSS |
@@ -62,41 +62,6 @@
 | **Docker & Docker Compose** | Контейнеризація |
 | **Nginx** | Reverse proxy (production) |
 
----
-
-## 📁 Структура проекту
-
-```
-emotional_support_robot/
-├── backend/
-│   ├── app/
-│   │   ├── api/          # REST/WebSocket ендпоінти
-│   │   ├── core/         # Безпека, middleware, промпти
-│   │   ├── models/       # SQLAlchemy моделі
-│   │   ├── schemas/      # Pydantic схеми
-│   │   ├── services/     # Бізнес-логіка
-│   │   └── utils/        # Утиліти
-│   ├── alembic/          # Міграції БД
-│   ├── data/             # JSON-дані (вправи, контакти)
-│   └── tests/            # Тести
-├── frontend/
-│   ├── src/
-│   │   ├── api/          # API-клієнти
-│   │   ├── components/   # React компоненти
-│   │   ├── hooks/        # Custom hooks
-│   │   ├── pages/        # Сторінки
-│   │   ├── stores/       # Zustand stores
-│   │   ├── types/        # TypeScript типи
-│   │   └── utils/        # Утиліти, константи
-│   └── public/
-├── docker/
-│   └── nginx/            # Nginx конфігурація
-├── docker-compose.yml
-├── pyproject.toml
-└── .env.example
-```
-
----
 
 ## 🚀 Швидкий старт
 
@@ -201,32 +166,5 @@ ws://localhost:8000/api/chat/ws/{conversation_id}?token={jwt_token}
 ```
 
 Повна інтерактивна документація доступна за адресою `/api/docs` (Swagger UI).
-
----
-
-## ⚙️ Змінні оточення
-
-Див. [`.env.example`](.env.example) для повного списку. Ключові змінні:
-
-| Змінна | Опис | За замовчуванням |
-|---|---|---|
-| `POSTGRES_PASSWORD` | Пароль PostgreSQL | `postgres` |
-| `JWT_SECRET_KEY` | Секрет для JWT токенів | ⚠️ Змініть! |
-| `ENCRYPTION_KEY` | Ключ AES-256 шифрування | ⚠️ Змініть! |
-| `OPENAI_API_KEY` | Ключ API OpenAI | — |
-| `CORS_ORIGINS` | Дозволені джерела CORS | `["http://localhost:5173"]` |
-| `RATE_LIMIT_PER_MINUTE` | Ліміт запитів на хвилину | `30` |
-
----
-
-## 🔒 Безпека
-
-- 🔐 JWT автентифікація з refresh-токенами
-- 🔑 bcrypt для хешування паролів
-- 🛡️ AES-256 шифрування персональних даних
-- 🚫 Rate limiting через Redis
-- 📋 Security headers middleware
-- 🧹 Автоматичне очищення застарілих даних
-- 📝 Sanitized логування (без персональних даних у логах)
 
 ---
