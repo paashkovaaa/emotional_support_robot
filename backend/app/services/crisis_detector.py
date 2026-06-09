@@ -20,7 +20,7 @@ _CONTACTS_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "crisi
 # Словники тригерних слів/фраз за рівнями
 # ─────────────────────────────────────────────
 
-_# CRITICAL — наміри або конкретні плани (пряма загроза)
+# CRITICAL — наміри або конкретні плани (пряма загроза)
 _CRITICAL_PATTERNS: list[str] = [
     r"(pattern_intent_1|pattern_intent_2).{0,15}(action_1|action_2)",
     r"(pattern_method_1|pattern_method_2)",
