@@ -1,0 +1,84 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# ── Virtual environments ──
+.venv/
+venv/
+env/
+ENV/
+
+# ── IDE ──
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Environment (secrets!) ──
+.env
+.env.local
+.env.production
+.env.staging
+
+# ── Node.js ──
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Docker ──
+docker-compose.override.yml
+
+# ── Logs & performance metrics ──
+logs/
+*.log
+*.jsonl
+
+# ── Uploaded user documents (runtime data) ──
+backend/data/uploads/
+
+# ── ML model caches ──
+*.pt
+*.bin
+*.onnx
+whisper_models/
+uploads/
+.cache/
+
+# ── Alembic ──
+backend/alembic/versions/__pycache__/
+
+# ── OS ──
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ── Diploma / personal notes (not part of source code) ──
+note_instructions.txt
+instructions.md
+project-analysis.md
+

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "breathing_478",
+    "name_uk": "Дихання 4-7-8",
+    "description_uk": "Техніка розслаблення, яка допомагає знизити тривогу та заспокоїтися. Вдихніть через ніс на 4 секунди, затримайте дихання на 7 секунд, повільно видихніть через рот на 8 секунд.",
+    "phases": [
+      {"phase": "inhale", "label_uk": "Вдих", "duration_seconds": 4},
+      {"phase": "hold", "label_uk": "Затримка", "duration_seconds": 7},
+      {"phase": "exhale", "label_uk": "Видих", "duration_seconds": 8}
+    ],
+    "cycles": 4,
+    "total_duration_seconds": 76,
+    "difficulty": "easy",
+    "tags": ["тривога", "сон", "розслаблення"]
+  },
+  {
+    "id": "box_breathing",
+    "name_uk": "Квадратне дихання",
+    "description_uk": "Використовується військовими та спецслужбами для швидкого заспокоєння. Кожна фаза триває 4 секунди: вдих, затримка, видих, затримка.",
+    "phases": [
+      {"phase": "inhale", "label_uk": "Вдих", "duration_seconds": 4},
+      {"phase": "hold", "label_uk": "Затримка", "duration_seconds": 4},
+      {"phase": "exhale", "label_uk": "Видих", "duration_seconds": 4},
+      {"phase": "hold", "label_uk": "Затримка", "duration_seconds": 4}
+    ],
+    "cycles": 4,
+    "total_duration_seconds": 64,
+    "difficulty": "easy",
+    "tags": ["стрес", "паніка", "концентрація"]
+  },
+  {
+    "id": "diaphragmatic",
+    "name_uk": "Діафрагмальне дихання",
+    "description_uk": "Глибоке дихання животом. Покладіть руку на живіт, вдихніть глибоко через ніс — живіт має піднятися. Повільно видихніть через рот.",
+    "phases": [
+      {"phase": "inhale", "label_uk": "Вдих (живіт піднімається)", "duration_seconds": 4},
+      {"phase": "exhale", "label_uk": "Видих (живіт опускається)", "duration_seconds": 6}
+    ],
+    "cycles": 6,
+    "total_duration_seconds": 60,
+    "difficulty": "easy",
+    "tags": ["розслаблення", "стрес", "щоденна практика"]
+  },
+  {
+    "id": "calming_breath",
+    "name_uk": "Заспокійливе дихання",
+    "description_uk": "Простий метод: довгий видих активує парасимпатичну нервову систему і заспокоює. Вдихніть на 3 секунди, видихніть на 6 секунд.",
+    "phases": [
+      {"phase": "inhale", "label_uk": "Вдих", "duration_seconds": 3},
+      {"phase": "exhale", "label_uk": "Повільний видих", "duration_seconds": 6}
+    ],
+    "cycles": 6,
+    "total_duration_seconds": 54,
+    "difficulty": "easy",
+    "tags": ["заспокоєння", "тривога", "початківці"]
+  },
+  {
+    "id": "grounding_54321",
+    "name_uk": "Заземлення 5-4-3-2-1",
+    "description_uk": "Техніка заземлення при панічній атаці. Назвіть 5 речей які бачите, 4 — чуєте, 3 — можете доторкнутися, 2 — відчуваєте запах, 1 — смак. Між кожним кроком — глибокий вдих і видих.",
+    "phases": [
+      {"phase": "inhale", "label_uk": "Глибокий вдих", "duration_seconds": 4},
+      {"phase": "hold", "label_uk": "Назвіть предмети", "duration_seconds": 10},
+      {"phase": "exhale", "label_uk": "Повільний видих", "duration_seconds": 6}
+    ],
+    "cycles": 5,
+    "total_duration_seconds": 100,
+    "difficulty": "medium",
+    "tags": ["панічна атака", "заземлення", "тривога"]
+  }
+]
